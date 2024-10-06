@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://localhost/features/</loc>
+    <lastmod>2024-10-05T11:21:29-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/overview/</loc>
+    <lastmod>2024-10-05T11:21:29-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/</loc>
+    <lastmod>2024-10-05T11:43:50-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/posts/</loc>
+    <lastmod>2024-10-05T11:43:47-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/features/create/</loc>
+    <lastmod>2024-10-05T11:43:27-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/overview/getting-started/</loc>
+    <lastmod>2024-10-05T11:43:12-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/features/insert/</loc>
+    <lastmod>2024-10-05T11:43:06-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/features/select/</loc>
+    <lastmod>2024-10-05T11:42:34-04:00</lastmod>
+  </url><url>
+    <loc>https://localhost/tags/</loc>
+  </url>
+</urlset>

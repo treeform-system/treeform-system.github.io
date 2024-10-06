@@ -1,0 +1,9 @@
+---
+more:
+  - name: News
+    ref: "/posts/"
+    icon: "gdoc_notification"
+  - name: "View Source"
+    ref: "https://github.com/treeform-system/rootdb"
+    external: true
+    icon: "gdoc_github"
