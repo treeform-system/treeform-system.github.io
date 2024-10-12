@@ -8,4 +8,6 @@ author: Kevin
 
 {{< button relref="overview/getting-started" size="large" >}}Getting Started{{< /button >}}
 
+{{< button relref="internals/aboutinternals" size="large" >}}Internals{{< /button >}}
+
 

@@ -14,3 +14,17 @@ main:
         ref: "/features/select"
       - name: Insert
         ref: "/features/insert"
+  - name: RootDB Internals
+    sub:
+      - name: What is this?
+        ref: "/internals/aboutinternals"
+      - name: Indexes
+        ref: "/internals/indexes"
+      # - name: File Formats
+      #   ref: "internals/fileformat"
+      - name: Parser
+        ref: "internals/parser"
+      - name: BufferPool
+        ref: "internals/bufferpool"
+      - name: Wal
+        ref: "internals/wal"
