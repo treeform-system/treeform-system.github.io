@@ -4,7 +4,7 @@
   class="color-toggle-hidden"
   
 >
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
   <meta property="og:site_name" content="TreeForm Systems" />
   <meta property="og:description" content="RootDB is currently in development and therefore this documentation may be a bit out of date for the actual algorithms and structures used, but for the most part will be up to date with the main branch of RootDB. What even are Indexes? There are many articles and videos about what indexes are, some good, some bad. So I will not go into the science or practicalities of what indexes do or benefits, but for the purposes of this page all you need to know is that an index is just a data structure that lets databases find where a specific row is being stored in the database." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://localhost/internals/indexes/" />
+<meta property="og:url" content="http://localhost:1313/internals/indexes/" />
 
 <meta property="article:section" content="Internals" />
     <meta
@@ -64,7 +64,7 @@
       "@type": "TechArticle",
       "articleSection": "Internals",
       "name": "Indexes",
-      "url" : "https://localhost/internals/indexes/",
+      "url" : "http://localhost:1313/internals/indexes/",
       "headline": "Indexes",
       "description": "RootDB is currently in development and therefore this documentation may be a bit out of date for the actual algorithms and structures used, but for the most part will be up to date with the main branch of RootDB. What even are Indexes? There are many articles and videos about what indexes are, some good, some bad. So I will not go into the science or practicalities of what indexes do or benefits, but for the purposes of this page all you need to know is that an index is just a data structure that lets databases find where a specific row is being stored in the database.",
       "wordCount" : "1007",
@@ -73,7 +73,7 @@
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://localhost/internals/indexes/"
+          "@id": "http://localhost:1313/internals/indexes/"
       },
       "copyrightHolder" : "TreeForm Systems",
       "copyrightYear" : "2024",
@@ -83,10 +83,10 @@
       "publisher":{
           "@type":"Organization",
           "name": "TreeForm Systems",
-          "url": "https://localhost/",
+          "url": "http://localhost:1313/",
           "logo": {
               "@type": "ImageObject",
-              "url": "https://localhost/brand.svg",
+              "url": "http://localhost:1313/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -157,7 +157,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://localhost/internals/indexes/" rel="canonical" type="text/html" />
+  <link href="http://localhost:1313/internals/indexes/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -194,7 +194,7 @@
       </label>
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="https://localhost/">
+      <a class="gdoc-brand gdoc-header__link" href="http://localhost:1313/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
@@ -226,7 +226,7 @@
         </span>
 
         <span class="gdoc-menu-header__home">
-          <a href="https://localhost/" class="gdoc-header__link">
+          <a href="http://localhost:1313/" class="gdoc-header__link">
             <svg class="gdoc-icon gdoc_home">
               <title>Back to homepage</title>
               <use xlink:href="#gdoc_home"></use>
@@ -894,6 +894,53 @@
         
       </li>
     
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+          
+          
+
+          
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              <span class="flex">
+                
+                  <svg class="gdoc-icon gdoc_email"><use xlink:href="#gdoc_email"></use></svg>
+                
+                <a
+                  href="/contact"
+                  class="gdoc-nav__entry"
+                >
+                  Contact
+                </a>
+              </span>
+              
+            </label>
+          
+        
+
+        
+      </li>
+    
   </ul>
 
 
@@ -955,7 +1002,7 @@
     >
         What even are Indexes?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/indexes/#what-even-are-indexes" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What even are Indexes?" aria-label="Anchor to: What even are Indexes?" href="#what-even-are-indexes">
+    <a data-clipboard-text="http://localhost:1313/internals/indexes/#what-even-are-indexes" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What even are Indexes?" aria-label="Anchor to: What even are Indexes?" href="#what-even-are-indexes">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -965,7 +1012,7 @@
     >
         What does RootDB use?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/indexes/#what-does-rootdb-use" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What does RootDB use?" aria-label="Anchor to: What does RootDB use?" href="#what-does-rootdb-use">
+    <a data-clipboard-text="http://localhost:1313/internals/indexes/#what-does-rootdb-use" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What does RootDB use?" aria-label="Anchor to: What does RootDB use?" href="#what-does-rootdb-use">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -985,7 +1032,7 @@ So why do we want N children? The most obvious answer is that it makes finding k
     >
         What does the B+Tree even do?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/indexes/#what-does-the-btree-even-do" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What does the B&#43;Tree even do?" aria-label="Anchor to: What does the B&#43;Tree even do?" href="#what-does-the-btree-even-do">
+    <a data-clipboard-text="http://localhost:1313/internals/indexes/#what-does-the-btree-even-do" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What does the B&#43;Tree even do?" aria-label="Anchor to: What does the B&#43;Tree even do?" href="#what-does-the-btree-even-do">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -997,7 +1044,7 @@ So why do we want N children? The most obvious answer is that it makes finding k
     >
         Some interesting properties of B+Trees
     </h2>
-    <a data-clipboard-text="https://localhost/internals/indexes/#some-interesting-properties-of-btrees" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Some interesting properties of B&#43;Trees" aria-label="Anchor to: Some interesting properties of B&#43;Trees" href="#some-interesting-properties-of-btrees">
+    <a data-clipboard-text="http://localhost:1313/internals/indexes/#some-interesting-properties-of-btrees" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Some interesting properties of B&#43;Trees" aria-label="Anchor to: Some interesting properties of B&#43;Trees" href="#some-interesting-properties-of-btrees">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1008,7 +1055,7 @@ So why do we want N children? The most obvious answer is that it makes finding k
     >
         Looking forward
     </h2>
-    <a data-clipboard-text="https://localhost/internals/indexes/#looking-forward" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Looking forward" aria-label="Anchor to: Looking forward" href="#looking-forward">
+    <a data-clipboard-text="http://localhost:1313/internals/indexes/#looking-forward" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Looking forward" aria-label="Anchor to: Looking forward" href="#looking-forward">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>

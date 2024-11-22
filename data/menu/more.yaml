@@ -7,3 +7,6 @@ more:
     ref: "https://github.com/treeform-system/rootdb"
     external: true
     icon: "gdoc_github"
+  - name: "Contact"
+    ref: "/contact/"
+    icon: "gdoc_email"

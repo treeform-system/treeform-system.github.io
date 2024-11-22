@@ -1,4 +1,4 @@
-baseURL = 'https://localhost/'
+baseURL = 'https://treeform-system.github.io/'
 languageCode = 'en-us'
 title = 'TreeForm Systems'
 theme = 'hugo-geekdoc'

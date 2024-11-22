@@ -10,4 +10,4 @@ author: Kevin
 
 {{< button relref="internals/aboutinternals" size="large" >}}Internals{{< /button >}}
 
-
+{{< button relref="contact" size="large" >}}Contact{{< /button >}}

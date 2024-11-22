@@ -4,7 +4,7 @@
   class="color-toggle-hidden"
   
 >
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
   <meta property="og:site_name" content="TreeForm Systems" />
   <meta property="og:description" content="RootDB is currently in development and therefore this documentation may be a bit out of date for the actual algorithms and structures used, but for the most part will be up to date with the main branch of RootDB. What is a WAL? Databases must be durable and fast, and one way they maintain this is by having a WAL. A Write Ahead Log (WAL) is a file that all transactions modifying data write to, and once they commit the transaction, this change eventually gets merged with the data files." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://localhost/internals/wal/" />
+<meta property="og:url" content="http://localhost:1313/internals/wal/" />
 
 <meta property="article:section" content="Internals" />
     <meta
@@ -64,7 +64,7 @@
       "@type": "TechArticle",
       "articleSection": "Internals",
       "name": "Wal",
-      "url" : "https://localhost/internals/wal/",
+      "url" : "http://localhost:1313/internals/wal/",
       "headline": "Wal",
       "description": "RootDB is currently in development and therefore this documentation may be a bit out of date for the actual algorithms and structures used, but for the most part will be up to date with the main branch of RootDB. What is a WAL? Databases must be durable and fast, and one way they maintain this is by having a WAL. A Write Ahead Log (WAL) is a file that all transactions modifying data write to, and once they commit the transaction, this change eventually gets merged with the data files.",
       "wordCount" : "665",
@@ -73,7 +73,7 @@
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://localhost/internals/wal/"
+          "@id": "http://localhost:1313/internals/wal/"
       },
       "copyrightHolder" : "TreeForm Systems",
       "copyrightYear" : "2024",
@@ -83,10 +83,10 @@
       "publisher":{
           "@type":"Organization",
           "name": "TreeForm Systems",
-          "url": "https://localhost/",
+          "url": "http://localhost:1313/",
           "logo": {
               "@type": "ImageObject",
-              "url": "https://localhost/brand.svg",
+              "url": "http://localhost:1313/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -157,7 +157,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://localhost/internals/wal/" rel="canonical" type="text/html" />
+  <link href="http://localhost:1313/internals/wal/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -194,7 +194,7 @@
       </label>
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="https://localhost/">
+      <a class="gdoc-brand gdoc-header__link" href="http://localhost:1313/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
@@ -226,7 +226,7 @@
         </span>
 
         <span class="gdoc-menu-header__home">
-          <a href="https://localhost/" class="gdoc-header__link">
+          <a href="http://localhost:1313/" class="gdoc-header__link">
             <svg class="gdoc-icon gdoc_home">
               <title>Back to homepage</title>
               <use xlink:href="#gdoc_home"></use>
@@ -894,6 +894,53 @@
         
       </li>
     
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+          
+          
+
+          
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              <span class="flex">
+                
+                  <svg class="gdoc-icon gdoc_email"><use xlink:href="#gdoc_email"></use></svg>
+                
+                <a
+                  href="/contact"
+                  class="gdoc-nav__entry"
+                >
+                  Contact
+                </a>
+              </span>
+              
+            </label>
+          
+        
+
+        
+      </li>
+    
   </ul>
 
 
@@ -955,7 +1002,7 @@
     >
         What is a WAL?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/wal/#what-is-a-wal" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What is a WAL?" aria-label="Anchor to: What is a WAL?" href="#what-is-a-wal">
+    <a data-clipboard-text="http://localhost:1313/internals/wal/#what-is-a-wal" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What is a WAL?" aria-label="Anchor to: What is a WAL?" href="#what-is-a-wal">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -965,7 +1012,7 @@
     >
         Why not just write to data files?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/wal/#why-not-just-write-to-data-files" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Why not just write to data files?" aria-label="Anchor to: Why not just write to data files?" href="#why-not-just-write-to-data-files">
+    <a data-clipboard-text="http://localhost:1313/internals/wal/#why-not-just-write-to-data-files" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Why not just write to data files?" aria-label="Anchor to: Why not just write to data files?" href="#why-not-just-write-to-data-files">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -975,7 +1022,7 @@
     >
         How does a WAL work?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/wal/#how-does-a-wal-work" class="gdoc-page__anchor clip flex align-center" title="Anchor to: How does a WAL work?" aria-label="Anchor to: How does a WAL work?" href="#how-does-a-wal-work">
+    <a data-clipboard-text="http://localhost:1313/internals/wal/#how-does-a-wal-work" class="gdoc-page__anchor clip flex align-center" title="Anchor to: How does a WAL work?" aria-label="Anchor to: How does a WAL work?" href="#how-does-a-wal-work">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -985,7 +1032,7 @@
     >
         Downsides?
     </h2>
-    <a data-clipboard-text="https://localhost/internals/wal/#downsides" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Downsides?" aria-label="Anchor to: Downsides?" href="#downsides">
+    <a data-clipboard-text="http://localhost:1313/internals/wal/#downsides" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Downsides?" aria-label="Anchor to: Downsides?" href="#downsides">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
