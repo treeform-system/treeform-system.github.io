@@ -4,7 +4,7 @@
   class="color-toggle-hidden"
   
 >
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8" />
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
   <meta property="og:site_name" content="TreeForm Systems" />
   <meta property="og:description" content="RootDB is currently in development and therefore this documentation may be a bit out of date for the actual algorithms and structures used, but for the most part will be up to date with the main branch of RootDB. What is a bufferpool? A bufferpool is just another fancy data structure that lets you reuse blocks of memory. Why is this important? because reading from a file is expensive. It takes longer to read from your Hard Drive than it does to read from your RAM." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/internals/bufferpool/" />
+<meta property="og:url" content="https://treeform-system.github.io/internals/bufferpool/" />
 
 <meta property="article:section" content="Internals" />
     <meta
@@ -64,7 +64,7 @@
       "@type": "TechArticle",
       "articleSection": "Internals",
       "name": "Bufferpool",
-      "url" : "http://localhost:1313/internals/bufferpool/",
+      "url" : "https://treeform-system.github.io/internals/bufferpool/",
       "headline": "Bufferpool",
       "description": "RootDB is currently in development and therefore this documentation may be a bit out of date for the actual algorithms and structures used, but for the most part will be up to date with the main branch of RootDB. What is a bufferpool? A bufferpool is just another fancy data structure that lets you reuse blocks of memory. Why is this important? because reading from a file is expensive. It takes longer to read from your Hard Drive than it does to read from your RAM.",
       "wordCount" : "944",
@@ -73,7 +73,7 @@
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost:1313/internals/bufferpool/"
+          "@id": "https://treeform-system.github.io/internals/bufferpool/"
       },
       "copyrightHolder" : "TreeForm Systems",
       "copyrightYear" : "2024",
@@ -83,10 +83,10 @@
       "publisher":{
           "@type":"Organization",
           "name": "TreeForm Systems",
-          "url": "http://localhost:1313/",
+          "url": "https://treeform-system.github.io/",
           "logo": {
               "@type": "ImageObject",
-              "url": "http://localhost:1313/brand.svg",
+              "url": "https://treeform-system.github.io/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -157,7 +157,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost:1313/internals/bufferpool/" rel="canonical" type="text/html" />
+  <link href="https://treeform-system.github.io/internals/bufferpool/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -194,7 +194,7 @@
       </label>
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="http://localhost:1313/">
+      <a class="gdoc-brand gdoc-header__link" href="https://treeform-system.github.io/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
@@ -226,7 +226,7 @@
         </span>
 
         <span class="gdoc-menu-header__home">
-          <a href="http://localhost:1313/" class="gdoc-header__link">
+          <a href="https://treeform-system.github.io/" class="gdoc-header__link">
             <svg class="gdoc-icon gdoc_home">
               <title>Back to homepage</title>
               <use xlink:href="#gdoc_home"></use>
@@ -1002,7 +1002,7 @@
     >
         What is a bufferpool?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/internals/bufferpool/#what-is-a-bufferpool" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What is a bufferpool?" aria-label="Anchor to: What is a bufferpool?" href="#what-is-a-bufferpool">
+    <a data-clipboard-text="https://treeform-system.github.io/internals/bufferpool/#what-is-a-bufferpool" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What is a bufferpool?" aria-label="Anchor to: What is a bufferpool?" href="#what-is-a-bufferpool">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1012,7 +1012,7 @@
     >
         How does RootDB bufferpool work?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/internals/bufferpool/#how-does-rootdb-bufferpool-work" class="gdoc-page__anchor clip flex align-center" title="Anchor to: How does RootDB bufferpool work?" aria-label="Anchor to: How does RootDB bufferpool work?" href="#how-does-rootdb-bufferpool-work">
+    <a data-clipboard-text="https://treeform-system.github.io/internals/bufferpool/#how-does-rootdb-bufferpool-work" class="gdoc-page__anchor clip flex align-center" title="Anchor to: How does RootDB bufferpool work?" aria-label="Anchor to: How does RootDB bufferpool work?" href="#how-does-rootdb-bufferpool-work">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1026,7 +1026,7 @@
     >
         Thread-safety
     </h2>
-    <a data-clipboard-text="http://localhost:1313/internals/bufferpool/#thread-safety" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Thread-safety" aria-label="Anchor to: Thread-safety" href="#thread-safety">
+    <a data-clipboard-text="https://treeform-system.github.io/internals/bufferpool/#thread-safety" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Thread-safety" aria-label="Anchor to: Thread-safety" href="#thread-safety">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1036,7 +1036,7 @@
     >
         What locks do we use?
     </h2>
-    <a data-clipboard-text="http://localhost:1313/internals/bufferpool/#what-locks-do-we-use" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What locks do we use?" aria-label="Anchor to: What locks do we use?" href="#what-locks-do-we-use">
+    <a data-clipboard-text="https://treeform-system.github.io/internals/bufferpool/#what-locks-do-we-use" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What locks do we use?" aria-label="Anchor to: What locks do we use?" href="#what-locks-do-we-use">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>

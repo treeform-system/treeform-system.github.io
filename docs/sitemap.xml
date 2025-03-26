@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/features/</loc>
+    <loc>https://treeform-system.github.io/features/</loc>
     <lastmod>2024-10-05T11:21:29-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/overview/</loc>
+    <loc>https://treeform-system.github.io/overview/</loc>
     <lastmod>2024-10-05T11:21:29-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://treeform-system.github.io/</loc>
     <lastmod>2024-10-20T04:43:50-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/internals/</loc>
+    <loc>https://treeform-system.github.io/internals/</loc>
     <lastmod>2024-10-07T19:28:51-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/internals/aboutinternals/</loc>
+    <loc>https://treeform-system.github.io/internals/aboutinternals/</loc>
     <lastmod>2024-10-07T19:28:51-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/internals/indexes/</loc>
+    <loc>https://treeform-system.github.io/internals/indexes/</loc>
     <lastmod>2024-10-07T19:22:01-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/internals/wal/</loc>
+    <loc>https://treeform-system.github.io/internals/wal/</loc>
     <lastmod>2024-10-07T19:19:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/internals/bufferpool/</loc>
+    <loc>https://treeform-system.github.io/internals/bufferpool/</loc>
     <lastmod>2024-10-07T19:19:25-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/internals/parser/</loc>
+    <loc>https://treeform-system.github.io/internals/parser/</loc>
     <lastmod>2024-10-07T19:19:16-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://treeform-system.github.io/posts/</loc>
     <lastmod>2024-10-05T11:43:47-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/features/create/</loc>
+    <loc>https://treeform-system.github.io/features/create/</loc>
     <lastmod>2024-10-05T11:43:27-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/overview/getting-started/</loc>
+    <loc>https://treeform-system.github.io/overview/getting-started/</loc>
     <lastmod>2024-10-05T11:43:12-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/features/insert/</loc>
+    <loc>https://treeform-system.github.io/features/insert/</loc>
     <lastmod>2024-10-05T11:43:06-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/features/select/</loc>
+    <loc>https://treeform-system.github.io/features/select/</loc>
     <lastmod>2024-10-05T11:42:34-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://treeform-system.github.io/contact/</loc>
     <lastmod>2024-10-05T11:21:29-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://treeform-system.github.io/tags/</loc>
   </url>
 </urlset>
