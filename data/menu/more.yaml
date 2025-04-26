@@ -10,3 +10,6 @@ more:
   - name: "Contact"
     ref: "/contact/"
     icon: "gdoc_email"
+  - name: "Roadmap"
+    ref: "/roadmap/"
+    icon: "gdoc_path"
