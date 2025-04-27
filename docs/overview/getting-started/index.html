@@ -12,10 +12,7 @@
 <meta name="generator" content="Hugo 0.125.6">
 
 
-  <meta name="description" content="Install pacakge can be installed with go get (go 1.22 or higher recommended):
-go get github.com/treeform-system/rootdb Features Currently the following features are supported
-SELECT INSERT CREATE Examples A simple usage would be:
-package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;github.com/treeform-system/rootdb&#34; ) func main() { fmt.Printf(&#34;Drivers=%#v\n&#34;, sql.Drivers()) db, err := sql.Open(&#34;rootdb&#34;, &#34;example&#34;) if err != nil { log.Fatal(err) } defer db.Close() err = db.Ping() if err != nil { log." />
+  <meta name="description" content="About RootDB is an embedded persistent relational database. Similar to sqlite, RootDB is meant to be small and easy to use since it conforms to the built-in database/sql interface. Uses SQL language to interact with database through the database/sql interface. Written in pure Golang and no external dependencies (only those used in testing are imported) its easy to integrate similar to how you would with any other databases (ie. Mysql, sqlite etc." />
 
     <title>Getting Started | TreeForm Systems</title>
 
@@ -41,10 +38,7 @@ package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;
     content="Getting Started"
   />
   <meta property="og:site_name" content="TreeForm Systems" />
-  <meta property="og:description" content="Install pacakge can be installed with go get (go 1.22 or higher recommended):
-go get github.com/treeform-system/rootdb Features Currently the following features are supported
-SELECT INSERT CREATE Examples A simple usage would be:
-package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;github.com/treeform-system/rootdb&#34; ) func main() { fmt.Printf(&#34;Drivers=%#v\n&#34;, sql.Drivers()) db, err := sql.Open(&#34;rootdb&#34;, &#34;example&#34;) if err != nil { log.Fatal(err) } defer db.Close() err = db.Ping() if err != nil { log." />
+  <meta property="og:description" content="About RootDB is an embedded persistent relational database. Similar to sqlite, RootDB is meant to be small and easy to use since it conforms to the built-in database/sql interface. Uses SQL language to interact with database through the database/sql interface. Written in pure Golang and no external dependencies (only those used in testing are imported) its easy to integrate similar to how you would with any other databases (ie. Mysql, sqlite etc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://treeform-system.github.io/overview/getting-started/" />
 
@@ -61,10 +55,7 @@ package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Getting Started" />
-  <meta name="twitter:description" content="Install pacakge can be installed with go get (go 1.22 or higher recommended):
-go get github.com/treeform-system/rootdb Features Currently the following features are supported
-SELECT INSERT CREATE Examples A simple usage would be:
-package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;github.com/treeform-system/rootdb&#34; ) func main() { fmt.Printf(&#34;Drivers=%#v\n&#34;, sql.Drivers()) db, err := sql.Open(&#34;rootdb&#34;, &#34;example&#34;) if err != nil { log.Fatal(err) } defer db.Close() err = db.Ping() if err != nil { log." />
+  <meta name="twitter:description" content="About RootDB is an embedded persistent relational database. Similar to sqlite, RootDB is meant to be small and easy to use since it conforms to the built-in database/sql interface. Uses SQL language to interact with database through the database/sql interface. Written in pure Golang and no external dependencies (only those used in testing are imported) its easy to integrate similar to how you would with any other databases (ie. Mysql, sqlite etc." />
 
 
   <script type="application/ld+json">
@@ -75,8 +66,8 @@ package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;
       "name": "Getting Started",
       "url" : "https://treeform-system.github.io/overview/getting-started/",
       "headline": "Getting Started",
-      "description": "Install pacakge can be installed with go get (go 1.22 or higher recommended):\ngo get github.com\/treeform-system\/rootdb Features Currently the following features are supported\nSELECT INSERT CREATE Examples A simple usage would be:\npackage main import ( \u0022database\/sql\u0022 \u0022fmt\u0022 \u0022log\u0022 _ \u0022github.com\/treeform-system\/rootdb\u0022 ) func main() { fmt.Printf(\u0022Drivers=%#v\\n\u0022, sql.Drivers()) db, err := sql.Open(\u0022rootdb\u0022, \u0022example\u0022) if err != nil { log.Fatal(err) } defer db.Close() err = db.Ping() if err != nil { log.",
-      "wordCount" : "244",
+      "description": "About RootDB is an embedded persistent relational database. Similar to sqlite, RootDB is meant to be small and easy to use since it conforms to the built-in database\/sql interface. Uses SQL language to interact with database through the database\/sql interface. Written in pure Golang and no external dependencies (only those used in testing are imported) its easy to integrate similar to how you would with any other databases (ie. Mysql, sqlite etc.",
+      "wordCount" : "316",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1044,6 +1035,16 @@ package main import ( &#34;database/sql&#34; &#34;fmt&#34; &#34;log&#34; _ &#34;
   >
     <h1>Getting Started</h1>
     <div class="flex align-center gdoc-page__anchorwrap">
+    <h3 id="about"
+    >
+        About
+    </h3>
+    <a data-clipboard-text="https://treeform-system.github.io/overview/getting-started/#about" class="gdoc-page__anchor clip flex align-center" title="Anchor to: About" aria-label="Anchor to: About" href="#about">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<p>RootDB is an embedded persistent relational database. Similar to sqlite, RootDB is meant to be small and easy to use since it conforms to the built-in database/sql interface. Uses SQL language to interact with database through the database/sql interface. Written in pure Golang and no external dependencies (only those used in testing are imported) its easy to integrate similar to how you would with any other databases (ie. Mysql, sqlite etc.)</p>
+<div class="flex align-center gdoc-page__anchorwrap">
     <h3 id="install"
     >
         Install

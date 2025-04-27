@@ -4,6 +4,10 @@ date = 2024-10-05T11:43:12-04:00
 author = 'Kevin'
 +++
 
+### About
+
+RootDB is an embedded persistent relational database. Similar to sqlite, RootDB is meant to be small and easy to use since it conforms to the built-in database/sql interface. Uses SQL language to interact with database through the database/sql interface. Written in pure Golang and no external dependencies (only those used in testing are imported) its easy to integrate similar to how you would with any other databases (ie. Mysql, sqlite etc.)
+
 ### Install
 
 pacakge can be installed with go get (go 1.22 or higher recommended):
